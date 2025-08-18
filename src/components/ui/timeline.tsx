@@ -13,6 +13,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 interface TimelineEntry {
   title: string;
+  subtitle: string;
   content: React.ReactNode;
 }
 
@@ -23,7 +24,8 @@ export default function Timeline() {
 
   const data: TimelineEntry[] = [
     {
-      title: "2024",
+      title: "The20hr.co",
+      subtitle: "August 2025",
       content: (
         <div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
@@ -67,7 +69,8 @@ export default function Timeline() {
       ),
     },
     {
-      title: "Early 2023",
+      title: "Freelance Development",
+      subtitle: "January 2023",
       content: (
         <div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
@@ -116,7 +119,8 @@ export default function Timeline() {
       ),
     },
     {
-      title: "Changelog",
+      title: "University Projects",
+      subtitle: "September 2022",
       content: (
         <div>
           <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
@@ -199,36 +203,56 @@ export default function Timeline() {
         className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10"
         ref={containerRef}
       >
-        <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-          <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
-            Changelog from my journey
-          </h2>
-          <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-            I&apos;ve been working on Aceternity for the past 2 years. Here&apos;s
-            a timeline of my journey.
-          </p>
+        <div className="max-w-7xl mx-auto py-32 px-4 md:px-8 lg:px-10">
+          <div className="text-center mb-16">
+            <h1 className="text-2xl md:text-6xl font-bold text-black dark:text-white mb-6">
+              The{" "}
+              <span className="relative inline-block">
+                <span className="relative z-10 bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600 bg-clip-text text-transparent">
+                  Changelog
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 via-blue-600/20 to-cyan-600/20 blur-xl rounded-lg"></div>
+              </span>{" "}
+              of Henry&apos;s Life
+            </h1>
+            <p className="text-neutral-600 dark:text-neutral-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+              A journey through the milestones, projects, and experiences that have shaped my path in technology and beyond.
+            </p>
+          </div>
         </div>
 
-        <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
+        <div ref={ref} className="relative max-w-7xl mx-auto pb-32 px-4 md:px-8 lg:px-10">
           {data.map((item, index) => (
             <div
               key={`timeline-${index}`}
-              className="flex justify-start pt-10 md:pt-40 md:gap-10"
+              className="flex justify-start pt-16 md:pt-48 md:gap-12"
             >
               <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
                 <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
                   <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
                 </div>
-                <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-500 dark:text-neutral-500 ">
-                  {item.title}
-                </h3>
+                <div className="hidden md:block md:pl-20">
+                  <h3 className="text-xl md:text-5xl font-bold text-neutral-500 dark:text-neutral-500">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm md:text-lg text-neutral-400 dark:text-neutral-600 mt-2">
+                    {item.subtitle}
+                  </p>
+                </div>
               </div>
 
               <div className="relative pl-20 pr-4 md:pl-4 w-full">
-                <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
-                  {item.title}
-                </h3>
-                {item.content}{" "}
+                <div className="md:hidden block mb-6 text-left">
+                  <h3 className="text-2xl font-bold text-neutral-500 dark:text-neutral-500">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-neutral-400 dark:text-neutral-600 mt-1">
+                    {item.subtitle}
+                  </p>
+                </div>
+                <div className="prose prose-neutral dark:prose-invert max-w-none">
+                  {item.content}
+                </div>
               </div>
             </div>
           ))}

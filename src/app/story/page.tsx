@@ -7,12 +7,12 @@ import Timeline from "@/components/ui/timeline";
 
 export default function StoryPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white dark:bg-neutral-950">
       {/* Navigation */}
       <SharedNavbar />
       
       {/* Timeline Content */}
-      <main>
+      <main className="relative">
         <Timeline />
       </main>
     </div>
