@@ -68,8 +68,8 @@ export default function Timeline() {
 
   const data: TimelineEntry[] = [
     {
-      title: "The20hr.co",
-      subtitle: "August 2025",
+      title: "Becoming an Exited Founder!",
+      subtitle: "August 2024",
       links: {
         website: "https://the20hr.co/",
         linkedin: "https://www.linkedin.com/posts/henry-allen-52868926b_20-hours-20k-exit-20-years-old-here-activity-7363170946574106624-BCKH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEIhP7ABNUSHYD_rPoX7mfX6gz0pW4iU5N8",
@@ -78,7 +78,7 @@ export default function Timeline() {
       content: (
         <div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Built, launched & sold a company in 20hrs!
+            Built, launched & sold The20hr.co in just 20 hours during a hackathon in Sweden! This incredible journey taught me the power of rapid execution and validated my entrepreneurial instincts.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
@@ -102,120 +102,176 @@ export default function Timeline() {
       ),
     },
     {
-      title: "Freelance Development",
-      subtitle: "January 2023",
+      title: "Winning In Paris! & YC",
+      subtitle: "June 2024",
       links: {
-        linkedin: "https://linkedin.com/in/henry-allen",
-        github: "https://github.com/henryallen",
+        linkedin: "https://www.linkedin.com/in/henry-allen-52868926b/",
       },
       content: (
         <div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            I usually run out of copy, but when I see content this big, I try to
-            integrate lorem ipsum.
+            Achieved a major milestone by winning a prestigious competition in Paris and getting accepted into Y Combinator's program. This opened doors to Silicon Valley's startup ecosystem and invaluable mentorship.
           </p>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Lorem ipsum is for people who are too lazy to write copy. But we are
-            not. Here are some more example of beautiful designs I built.
-          </p>
-          <div className="grid grid-cols-2 gap-4">
-            <img
-              key="hero-sections"
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-              key="features-section"
-              src="https://assets.aceternity.com/features-section.png"
-              alt="feature template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-              key="bento-grids"
-              src="https://assets.aceternity.com/pro/bento-grids.png"
-              alt="bento template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-              key="cards"
-              src="https://assets.aceternity.com/cards.png"
-              alt="cards template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
+          <div className="mb-8">
+            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+              🏆 Won Paris Tech Competition
+            </div>
+            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+              🚀 Y Combinator Acceptance
+            </div>
+            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+              🌟 Silicon Valley Network Access
+            </div>
           </div>
         </div>
       ),
     },
     {
-      title: "University Projects",
+      title: "Winning in Milan & Entrepreneur First",
+      subtitle: "March 2024",
+      links: {
+        linkedin: "https://www.linkedin.com/in/henry-allen-52868926b/",
+      },
+      content: (
+        <div>
+          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            Secured victory in Milan's entrepreneurship challenge and joined Entrepreneur First, one of Europe's leading talent investor programs. This experience connected me with exceptional co-founders and deep tech opportunities.
+          </p>
+          <div className="mb-8">
+            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+              🏆 Milan Competition Winner
+            </div>
+            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+              🤝 Entrepreneur First Cohort
+            </div>
+            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+              💡 Deep Tech Focus
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "AI for the London Marathon",
+      subtitle: "April 2023",
+      links: {
+        github: "https://github.com/henryallen",
+      },
+      content: (
+        <div>
+          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            Developed an AI-powered application specifically for the London Marathon, combining my passion for technology with fitness. This project showcased real-world AI applications in sports and event management.
+          </p>
+          <div className="mb-8">
+            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+              🤖 AI-Powered Marathon App
+            </div>
+            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+              🏃‍♂️ Sports Technology Integration
+            </div>
+            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+              📱 Real-time Event Management
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Move to London! + New Job",
+      subtitle: "January 2023",
+      links: {
+        linkedin: "https://www.linkedin.com/in/henry-allen-52868926b/",
+      },
+      content: (
+        <div>
+          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            Made the big move to London and started a new role that would define my career trajectory. This transition marked my entry into London's vibrant tech scene and opened up incredible opportunities for growth.
+          </p>
+          <div className="mb-8">
+            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+              🏙️ Relocated to London
+            </div>
+            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+              💼 New Career Opportunity
+            </div>
+            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+              🌍 International Experience
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Scaling Voice AI",
       subtitle: "September 2022",
       links: {
         github: "https://github.com/henryallen",
       },
       content: (
         <div>
-          <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Deployed 5 new components on Aceternity today
+          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            Led the scaling efforts for voice AI technology, working on cutting-edge natural language processing and speech recognition systems. This role deepened my expertise in AI/ML and large-scale system architecture.
           </p>
           <div className="mb-8">
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Card grid component
+              🎤 Voice AI Technology
             </div>
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Startup template Aceternity
+              📈 Scaling Architecture
             </div>
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Random file upload lol
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Himesh Reshammiya Music CD
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Salman Bhai Fan Club registrations open
+              🧠 NLP & Speech Recognition
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
-            <img
-              key="hero-sections-2"
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-              key="features-section-2"
-              src="https://assets.aceternity.com/features-section.png"
-              alt="feature template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-              key="bento-grids-2"
-              src="https://assets.aceternity.com/pro/bento-grids.png"
-              alt="bento template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-              key="cards-2"
-              src="https://assets.aceternity.com/cards.png"
-              alt="cards template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
+        </div>
+      ),
+    },
+    {
+      title: "Travel & AI Engineering",
+      subtitle: "June 2022",
+      links: {
+        linkedin: "https://www.linkedin.com/in/henry-allen-52868926b/",
+      },
+      content: (
+        <div>
+          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            Combined my love for travel with AI engineering, working on projects across different countries and cultures. This period taught me about global perspectives in technology and the importance of diverse problem-solving approaches.
+          </p>
+          <div className="mb-8">
+            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+              ✈️ International Projects
+            </div>
+            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+              🤖 AI Engineering Focus
+            </div>
+            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+              🌍 Cross-Cultural Collaboration
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Marketing Agency & College!",
+      subtitle: "September 2020",
+      links: {
+        linkedin: "https://www.linkedin.com/in/henry-allen-52868926b/",
+      },
+      content: (
+        <div>
+          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            Started my entrepreneurial journey by founding a marketing agency while still in college. This experience taught me the fundamentals of business, client management, and the importance of balancing academics with real-world experience.
+          </p>
+          <div className="mb-8">
+            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+              🎓 College & Business Balance
+            </div>
+            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+              📊 Marketing Agency Founder
+            </div>
+            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+              💼 Client Management Skills
+            </div>
           </div>
         </div>
       ),

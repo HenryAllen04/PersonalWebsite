@@ -6,6 +6,8 @@
 import { SharedNavbar } from "@/components/shared-navbar";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { TextGenerateWithHighlight } from "@/components/ui/text-generate-with-highlight";
+import FeaturesSectionDemo from "@/components/ui/features-section-demo-3";
+import Timeline from "@/components/ui/timeline";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -48,31 +50,81 @@ export default function Home() {
           <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4 text-center">
             Where code meets creativity.
           </div>
-          <button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-6 py-3 font-medium hover:scale-105 transition-transform">
+          <button 
+            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+            className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-6 py-3 font-medium hover:scale-105 transition-transform cursor-pointer"
+          >
             View my work
           </button>
         </motion.div>
       </AuroraBackground>
       
-      {/* Temporary content to test navbar scroll effects */}
-      <div className="min-h-screen bg-white dark:bg-gray-900 p-8">
+      {/* About Section */}
+      <section id="about" className="min-h-screen bg-white dark:bg-gray-900 p-8 flex items-center">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-8 dark:text-white">About</h2>
-          <p className="text-lg dark:text-gray-300 mb-8">
-            Welcome to my personal website. I'm a developer and entrepreneur passionate about building innovative solutions.
+          <h2 className="text-4xl font-bold mb-8 dark:text-white">About Me</h2>
+          <p className="text-lg dark:text-gray-300 mb-8 leading-relaxed">
+            I'm Henry Allen, a passionate developer and entrepreneur who believes in the power of technology to transform lives. 
+            From building AI-powered solutions to scaling voice technology, I've been on an incredible journey of innovation and growth.
           </p>
-          
-          <h2 className="text-4xl font-bold mb-8 dark:text-white">Projects</h2>
-          <p className="text-lg dark:text-gray-300 mb-8">
-            Here are some of the projects I've worked on...
+          <p className="text-lg dark:text-gray-300 mb-8 leading-relaxed">
+            My experience spans from founding companies in record time to working with cutting-edge AI systems. 
+            I've had the privilege of winning competitions in Paris and Milan, joining Y Combinator, and building solutions that make a real difference.
           </p>
-          
-          <h2 className="text-4xl font-bold mb-8 dark:text-white">Contact</h2>
-          <p className="text-lg dark:text-gray-300">
-            Feel free to reach out if you'd like to collaborate or just say hello!
-          </p>
+          <div className="flex flex-wrap gap-4 mt-8">
+            <a 
+              href="https://www.linkedin.com/in/henry-allen-52868926b/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
+            >
+              Connect on LinkedIn
+            </a>
+            <button 
+              onClick={() => document.getElementById('story')?.scrollIntoView({ behavior: 'smooth' })}
+              className="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-900 dark:text-gray-100 px-6 py-3 rounded-lg font-medium transition-colors cursor-pointer"
+            >
+              Read My Story
+            </button>
+          </div>
         </div>
-      </div>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="bg-white dark:bg-neutral-950">
+        <FeaturesSectionDemo />
+      </section>
+
+      {/* Story/Timeline Section */}
+      <section id="story" className="bg-white dark:bg-neutral-950">
+        <Timeline />
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="min-h-screen bg-white dark:bg-gray-900 p-8 flex items-center">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-8 dark:text-white">Let's Connect</h2>
+          <p className="text-lg dark:text-gray-300 mb-8 leading-relaxed">
+            I'm always excited to discuss new opportunities, collaborate on innovative projects, or just have a great conversation about technology and entrepreneurship.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a 
+              href="https://www.linkedin.com/in/henry-allen-52868926b/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-medium transition-colors text-lg"
+            >
+              LinkedIn
+            </a>
+            <a 
+              href="mailto:henry@henryallen.me" 
+              className="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-900 dark:text-gray-100 px-8 py-4 rounded-lg font-medium transition-colors text-lg"
+            >
+              Email Me
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
