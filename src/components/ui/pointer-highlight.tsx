@@ -1,10 +1,10 @@
 /**
- * Purpose: Pointer highlight component with animated rectangle border and pointer
- * Features: Responsive sizing, motion animations, customizable styling
+ * Purpose: Animated pointer highlight component with border and cursor
+ * Features: Expanding border rectangle with animated pointer cursor
  */
 "use client";
 import { cn } from "@/lib/utils";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 
 export function PointerHighlight({

@@ -6,7 +6,7 @@
 import { SharedNavbar } from "@/components/shared-navbar";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { TextGenerateWithHighlight } from "@/components/ui/text-generate-with-highlight";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -57,29 +57,22 @@ export default function Home() {
       {/* Temporary content to test navbar scroll effects */}
       <div className="min-h-screen bg-white dark:bg-gray-900 p-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-8 text-center">About Me</h2>
-          <div className="space-y-6 text-lg leading-relaxed">
-            <p>This is temporary content to test the navbar scroll effects. Scroll up and down to see the navbar resize and show blur effects.</p>
-            <p>The navbar should:</p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Start full width when at the top</li>
-              <li>After scrolling 100px, shrink to 40% width on desktop</li>
-              <li>Show backdrop blur and shadow effects</li>
-              <li>Animate smoothly between states</li>
-            </ul>
-            <p>Keep scrolling to test more...</p>
-            {Array.from({ length: 20 }, (_, i) => (
-              <p key={i}>
-                Paragraph {i + 1}: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-              </p>
-            ))}
-          </div>
+          <h2 className="text-4xl font-bold mb-8 dark:text-white">About</h2>
+          <p className="text-lg dark:text-gray-300 mb-8">
+            Welcome to my personal website. I'm a developer and entrepreneur passionate about building innovative solutions.
+          </p>
+          
+          <h2 className="text-4xl font-bold mb-8 dark:text-white">Projects</h2>
+          <p className="text-lg dark:text-gray-300 mb-8">
+            Here are some of the projects I've worked on...
+          </p>
+          
+          <h2 className="text-4xl font-bold mb-8 dark:text-white">Contact</h2>
+          <p className="text-lg dark:text-gray-300">
+            Feel free to reach out if you'd like to collaborate or just say hello!
+          </p>
         </div>
       </div>
     </div>
   );
 }
-
-

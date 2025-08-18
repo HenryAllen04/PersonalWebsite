@@ -4,7 +4,7 @@
  */
 "use client";
 import { useEffect, useState } from "react";
-import { motion, stagger, useAnimate } from "motion/react";
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { PointerHighlight } from "./pointer-highlight";
 
@@ -31,35 +31,55 @@ export const TextGenerateWithHighlight = ({
   highlightDelay?: number;
   onComplete?: () => void;
 }) => {
-  const [scope, animate] = useAnimate();
   const [showHighlight, setShowHighlight] = useState(false);
   const [animationComplete, setAnimationComplete] = useState(false);
 
-  useEffect(() => {
-    const animateText = async () => {
-      await animate(
-        "span",
-        {
-          opacity: 1,
-          filter: filter ? "blur(0px)" : "none",
-        },
-        {
-          duration: duration,
-          delay: stagger(staggerDelay),
-        }
-      );
-      
-      setAnimationComplete(true);
-      
-      // Show highlight after delay
-      setTimeout(() => {
-        setShowHighlight(true);
-        onComplete?.();
-      }, highlightDelay);
-    };
+  const container = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: staggerDelay,
+        delayChildren: 0.1,
+      },
+    },
+  };
 
-    animateText();
-  }, [animate, duration, filter, staggerDelay, highlightDelay, onComplete]);
+  const child = {
+    visible: {
+      opacity: 1,
+      filter: filter ? "blur(0px)" : "none",
+      transition: {
+        type: "spring",
+        damping: 12,
+        stiffness: 100,
+        duration: duration,
+      },
+    },
+    hidden: {
+      opacity: 0,
+      filter: filter ? "blur(10px)" : "none",
+    },
+  };
+
+  useEffect(() => {
+    // Calculate total animation time based on number of words
+    const totalAnimationTime = words.length * staggerDelay * 1000 + 500;
+    
+    const animationTimer = setTimeout(() => {
+      setAnimationComplete(true);
+    }, totalAnimationTime);
+
+    const highlightTimer = setTimeout(() => {
+      setShowHighlight(true);
+      onComplete?.();
+    }, totalAnimationTime + highlightDelay);
+
+    return () => {
+      clearTimeout(animationTimer);
+      clearTimeout(highlightTimer);
+    };
+  }, [words.length, staggerDelay, highlightDelay, onComplete]);
 
   const renderWords = () => {
     // Group consecutive highlight words
@@ -87,7 +107,12 @@ export const TextGenerateWithHighlight = ({
     let spanIndex = 0;
 
     return (
-      <motion.div ref={scope} className="inline">
+      <motion.div 
+        variants={container}
+        initial="hidden"
+        animate="visible"
+        className="inline"
+      >
         {groupedWords.map((item, groupIndex) => {
           if (Array.isArray(item)) {
             // Highlight group
@@ -97,10 +122,8 @@ export const TextGenerateWithHighlight = ({
             const content = item.map((word, wordIndex) => (
               <motion.span
                 key={`highlight-${groupIndex}-${wordIndex}`}
+                variants={child}
                 className={cn("dark:text-white text-black opacity-0", highlightClass)}
-                style={{
-                  filter: filter ? "blur(10px)" : "none",
-                }}
               >
                 {word.text}
                 {wordIndex < item.length - 1 ? " " : " "}
@@ -136,10 +159,8 @@ export const TextGenerateWithHighlight = ({
             return (
               <motion.span
                 key={`word-${groupIndex}`}
+                variants={child}
                 className={cn("dark:text-white text-black opacity-0", word.className)}
-                style={{
-                  filter: filter ? "blur(10px)" : "none",
-                }}
               >
                 {word.text}{" "}
               </motion.span>
