@@ -4,7 +4,7 @@
  */
 "use client";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { PointerHighlight } from "./pointer-highlight";
 
@@ -34,7 +34,7 @@ export const TextGenerateWithHighlight = ({
   const [showHighlight, setShowHighlight] = useState(false);
   const [animationComplete, setAnimationComplete] = useState(false);
 
-  const container = {
+  const container: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -45,12 +45,12 @@ export const TextGenerateWithHighlight = ({
     },
   };
 
-  const child = {
+  const child: Variants = {
     visible: {
       opacity: 1,
       filter: filter ? "blur(0px)" : "none",
       transition: {
-        type: "spring",
+        type: "spring" as const,
         damping: 12,
         stiffness: 100,
         duration: duration,
