@@ -4,12 +4,12 @@
  */
 "use client";
 import {
-  useMotionValueEvent,
   useScroll,
   useTransform,
   motion,
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 interface TimelineEntry {
   title: string;
@@ -81,7 +81,7 @@ export default function Timeline() {
             Built, launched & sold The20hr.co in just 20 hours during a hackathon in Sweden! This incredible journey taught me the power of rapid execution and validated my entrepreneurial instincts.
           </p>
           <div className="grid grid-cols-2 gap-4">
-            <img
+            <Image
               key="group-photo-sweden"
               src="/timeline/groupphotosweden.jpeg"
               alt="Group photo from Sweden hackathon"
@@ -89,7 +89,7 @@ export default function Timeline() {
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
-            <img
+            <Image
               key="sponsors-screenshot"
               src="/timeline/Screenshot 2025-08-18 at 17.00.37.png"
               alt="Sponsors and funding screenshot"
@@ -113,7 +113,7 @@ export default function Timeline() {
             Achieved a major milestone by winning a prestigious competition in Paris and getting accepted into Y Combinator&apos;s program. This opened doors to Silicon Valley&apos;s startup ecosystem and invaluable mentorship.
           </p>
           <div className="grid grid-cols-3 gap-4 mb-8">
-            <img
+            <Image
               key="paris-1"
               src="/timeline/paris1.jpeg"
               alt="Paris competition experience 1"
@@ -121,7 +121,7 @@ export default function Timeline() {
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
-            <img
+            <Image
               key="paris-2"
               src="/timeline/paris2.jpeg"
               alt="Paris competition experience 2"
@@ -129,7 +129,7 @@ export default function Timeline() {
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
-            <img
+            <Image
               key="paris-3"
               src="/timeline/paris3.jpeg"
               alt="Paris competition experience 3"
@@ -164,7 +164,7 @@ export default function Timeline() {
             Secured victory in Milan&apos;s entrepreneurship challenge and joined Entrepreneur First, one of Europe&apos;s leading talent investor programs. This experience connected me with exceptional co-founders and deep tech opportunities.
           </p>
           <div className="grid grid-cols-2 gap-4 mb-8">
-            <img
+            <Image
               key="milan-1"
               src="/timeline/Milan1.jpeg"
               alt="Milan competition experience 1"
@@ -172,7 +172,7 @@ export default function Timeline() {
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
-            <img
+            <Image
               key="milan-2"
               src="/timeline/Milan2.jpeg"
               alt="Milan competition experience 2"
