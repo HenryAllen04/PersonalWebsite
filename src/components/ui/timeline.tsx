@@ -112,6 +112,32 @@ export default function Timeline() {
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
             Achieved a major milestone by winning a prestigious competition in Paris and getting accepted into Y Combinator&apos;s program. This opened doors to Silicon Valley&apos;s startup ecosystem and invaluable mentorship.
           </p>
+          <div className="grid grid-cols-3 gap-4 mb-8">
+            <img
+              key="paris-1"
+              src="/timeline/paris1.jpeg"
+              alt="Paris competition experience 1"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <img
+              key="paris-2"
+              src="/timeline/paris2.jpeg"
+              alt="Paris competition experience 2"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <img
+              key="paris-3"
+              src="/timeline/paris3.jpeg"
+              alt="Paris competition experience 3"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+          </div>
           <div className="mb-8">
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
               🏆 Won Paris Tech Competition
@@ -137,6 +163,24 @@ export default function Timeline() {
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
             Secured victory in Milan&apos;s entrepreneurship challenge and joined Entrepreneur First, one of Europe&apos;s leading talent investor programs. This experience connected me with exceptional co-founders and deep tech opportunities.
           </p>
+          <div className="grid grid-cols-2 gap-4 mb-8">
+            <img
+              key="milan-1"
+              src="/timeline/Milan1.jpeg"
+              alt="Milan competition experience 1"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <img
+              key="milan-2"
+              src="/timeline/Milan2.jpeg"
+              alt="Milan competition experience 2"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+          </div>
           <div className="mb-8">
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
               🏆 Milan Competition Winner
