@@ -19,12 +19,12 @@ import { useState } from "react";
 export function SharedNavbar() {
   const navItems = [
     {
-      name: "Projects", 
-      link: "#projects",
-    },
-    {
       name: "My Story",
       link: "#story",
+    },
+    {
+      name: "Projects", 
+      link: "#projects",
     },
     {
       name: "Contact",
@@ -41,12 +41,21 @@ export function SharedNavbar() {
         <NavbarLogo />
         <NavItems items={navItems} />
         <div className="flex items-center gap-4">
-          <a href="https://www.linkedin.com/in/henry-allen-52868926b/" target="_blank" rel="noopener noreferrer">
-            <NavbarButton variant="secondary">LinkedIn</NavbarButton>
-          </a>
-          <button onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
-            <NavbarButton variant="primary">Get in touch</NavbarButton>
-          </button>
+          <NavbarButton 
+            href="https://www.linkedin.com/in/henry-allen-52868926b/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            variant="secondary"
+          >
+            LinkedIn
+          </NavbarButton>
+          <NavbarButton 
+            as="button"
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            variant="primary"
+          >
+            Get in touch
+          </NavbarButton>
         </div>
       </NavBody>
 
@@ -75,29 +84,27 @@ export function SharedNavbar() {
             </a>
           ))}
           <div className="flex w-full flex-col gap-4">
-            <a href="https://www.linkedin.com/in/henry-allen-52868926b/" target="_blank" rel="noopener noreferrer" className="w-full">
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="secondary"
-                className="w-full"
-              >
-                LinkedIn
-              </NavbarButton>
-            </a>
-            <button 
+            <NavbarButton
+              href="https://www.linkedin.com/in/henry-allen-52868926b/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              onClick={() => setIsMobileMenuOpen(false)}
+              variant="secondary"
+              className="w-full"
+            >
+              LinkedIn
+            </NavbarButton>
+            <NavbarButton
+              as="button"
               onClick={() => {
                 setIsMobileMenuOpen(false);
                 document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
               }}
+              variant="primary"
               className="w-full"
             >
-              <NavbarButton
-                variant="primary"
-                className="w-full"
-              >
-                Get in touch
-              </NavbarButton>
-            </button>
+              Get in touch
+            </NavbarButton>
           </div>
         </MobileNavMenu>
       </MobileNav>

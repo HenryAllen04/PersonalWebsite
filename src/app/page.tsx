@@ -51,7 +51,7 @@ export default function Home() {
             Where code meets creativity.
           </div>
           <button 
-            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => document.getElementById('story')?.scrollIntoView({ behavior: 'smooth' })}
             className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-6 py-3 font-medium hover:scale-105 transition-transform cursor-pointer"
           >
             View my work
@@ -61,14 +61,14 @@ export default function Home() {
       
 
 
-      {/* Projects Section */}
-      <section id="projects" className="bg-white dark:bg-neutral-950">
-        <FeaturesSectionDemo />
-      </section>
-
       {/* Story/Timeline Section */}
       <section id="story" className="bg-white dark:bg-neutral-950">
         <Timeline />
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="bg-white dark:bg-neutral-950">
+        <FeaturesSectionDemo />
       </section>
 
       {/* Contact Section */}
