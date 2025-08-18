@@ -19,16 +19,16 @@ import { useState } from "react";
 export function SharedNavbar() {
   const navItems = [
     {
-      name: "About",
-      link: "#about",
-    },
-    {
       name: "Projects", 
       link: "#projects",
     },
     {
       name: "My Story",
-      link: "/story",
+      link: "#story",
+    },
+    {
+      name: "Contact",
+      link: "#contact",
     },
   ];
 
@@ -41,8 +41,12 @@ export function SharedNavbar() {
         <NavbarLogo />
         <NavItems items={navItems} />
         <div className="flex items-center gap-4">
-          <NavbarButton variant="secondary">Resume</NavbarButton>
-          <NavbarButton variant="primary">Get in touch</NavbarButton>
+          <a href="https://www.linkedin.com/in/henry-allen-52868926b/" target="_blank" rel="noopener noreferrer">
+            <NavbarButton variant="secondary">LinkedIn</NavbarButton>
+          </a>
+          <button onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+            <NavbarButton variant="primary">Get in touch</NavbarButton>
+          </button>
         </div>
       </NavBody>
 
@@ -71,20 +75,29 @@ export function SharedNavbar() {
             </a>
           ))}
           <div className="flex w-full flex-col gap-4">
-            <NavbarButton
-              onClick={() => setIsMobileMenuOpen(false)}
-              variant="primary"
+            <a href="https://www.linkedin.com/in/henry-allen-52868926b/" target="_blank" rel="noopener noreferrer" className="w-full">
+              <NavbarButton
+                onClick={() => setIsMobileMenuOpen(false)}
+                variant="secondary"
+                className="w-full"
+              >
+                LinkedIn
+              </NavbarButton>
+            </a>
+            <button 
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+              }}
               className="w-full"
             >
-              Resume
-            </NavbarButton>
-            <NavbarButton
-              onClick={() => setIsMobileMenuOpen(false)}
-              variant="primary"
-              className="w-full"
-            >
-              Get in touch
-            </NavbarButton>
+              <NavbarButton
+                variant="primary"
+                className="w-full"
+              >
+                Get in touch
+              </NavbarButton>
+            </button>
           </div>
         </MobileNavMenu>
       </MobileNav>

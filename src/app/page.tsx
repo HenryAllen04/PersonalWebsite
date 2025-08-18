@@ -59,36 +59,7 @@ export default function Home() {
         </motion.div>
       </AuroraBackground>
       
-      {/* About Section */}
-      <section id="about" className="min-h-screen bg-white dark:bg-gray-900 p-8 flex items-center">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-8 dark:text-white">About Me</h2>
-          <p className="text-lg dark:text-gray-300 mb-8 leading-relaxed">
-            I'm Henry Allen, a passionate developer and entrepreneur who believes in the power of technology to transform lives. 
-            From building AI-powered solutions to scaling voice technology, I've been on an incredible journey of innovation and growth.
-          </p>
-          <p className="text-lg dark:text-gray-300 mb-8 leading-relaxed">
-            My experience spans from founding companies in record time to working with cutting-edge AI systems. 
-            I've had the privilege of winning competitions in Paris and Milan, joining Y Combinator, and building solutions that make a real difference.
-          </p>
-          <div className="flex flex-wrap gap-4 mt-8">
-            <a 
-              href="https://www.linkedin.com/in/henry-allen-52868926b/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
-            >
-              Connect on LinkedIn
-            </a>
-            <button 
-              onClick={() => document.getElementById('story')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-900 dark:text-gray-100 px-6 py-3 rounded-lg font-medium transition-colors cursor-pointer"
-            >
-              Read My Story
-            </button>
-          </div>
-        </div>
-      </section>
+
 
       {/* Projects Section */}
       <section id="projects" className="bg-white dark:bg-neutral-950">

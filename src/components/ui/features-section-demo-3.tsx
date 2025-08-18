@@ -12,34 +12,64 @@ import { IconBrandYoutubeFilled } from "@tabler/icons-react";
 export default function FeaturesSectionDemo() {
   const features = [
     {
-      title: "AI-Powered Solutions",
+      title: "The20hr.co - Rapid Startup",
       description:
-        "Building intelligent applications that leverage machine learning and AI to solve real-world problems.",
-      skeleton: <SkeletonOne />,
+        "Built, launched & sold a company in just 20 hours during a hackathon in Sweden. A testament to rapid execution and market validation.",
+      skeleton: <SkeletonStartup />,
       className:
-        "col-span-1 lg:col-span-4 border-b lg:border-r dark:border-neutral-800",
+        "col-span-1 lg:col-span-3 border-b lg:border-r dark:border-neutral-800",
     },
     {
-      title: "Full-Stack Development",
+      title: "AI-Powered Marathon App",
       description:
-        "Creating end-to-end applications with modern frameworks and cutting-edge technologies.",
-      skeleton: <SkeletonTwo />,
-      className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
+        "Developed an AI application for the London Marathon, combining sports technology with machine learning for real-time event management.",
+      skeleton: <SkeletonAI />,
+      className: "border-b col-span-1 lg:col-span-3 dark:border-neutral-800",
+    },
+    {
+      title: "Voice AI Scaling",
+      description:
+        "Led the scaling efforts for voice AI technology, working on cutting-edge NLP and speech recognition systems.",
+      skeleton: <SkeletonVoiceAI />,
+      className:
+        "col-span-1 lg:col-span-2 border-b lg:border-r dark:border-neutral-800",
+    },
+    {
+      title: "Marketing Agency",
+      description:
+        "Founded and ran a successful marketing agency while in college, managing multiple clients and learning business fundamentals.",
+      skeleton: <SkeletonMarketing />,
+      className: "col-span-1 lg:col-span-2 border-b dark:border-neutral-800",
+    },
+    {
+      title: "Y Combinator Experience",
+      description:
+        "Accepted into Y Combinator's prestigious program, gaining access to Silicon Valley's startup ecosystem and world-class mentorship.",
+      skeleton: <SkeletonYC />,
+      className: "col-span-1 lg:col-span-2 border-b lg:border-r dark:border-neutral-800",
     },
     {
       title: "Tech Content Creation",
       description:
-        "Sharing knowledge through videos, tutorials, and educational content about technology and entrepreneurship.",
+        "Creating educational content about technology, entrepreneurship, and AI through videos, tutorials, and social media.",
       skeleton: <SkeletonThree />,
       className:
-        "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
+        "col-span-1 lg:col-span-2 border-b dark:border-neutral-800",
     },
     {
-      title: "Global Impact",
+      title: "Global Competitions",
       description:
-        "Working with teams and clients worldwide to create solutions that make a difference across different markets and cultures.",
+        "Won prestigious tech competitions in Paris and Milan, representing innovation in AI and entrepreneurship on international stages.",
+      skeleton: <SkeletonCompetitions />,
+      className:
+        "col-span-1 lg:col-span-3 lg:border-r dark:border-neutral-800",
+    },
+    {
+      title: "International Impact",
+      description:
+        "Working across different countries and cultures, from London to Sweden, building solutions that transcend geographical boundaries.",
       skeleton: <SkeletonFour />,
-      className: "col-span-1 lg:col-span-3 border-b lg:border-none",
+      className: "col-span-1 lg:col-span-3",
     },
   ];
   
@@ -107,17 +137,96 @@ const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
   );
 };
 
-export const SkeletonOne = () => {
+export const SkeletonStartup = () => {
+  return (
+    <div className="relative flex py-8 px-2 gap-10 h-full">
+      <div className="w-full p-5 mx-auto bg-white dark:bg-neutral-900 shadow-2xl group h-full">
+        <div className="flex flex-1 w-full h-full flex-col space-y-2">
+          <div className="h-full w-full bg-gradient-to-br from-green-500 via-emerald-500 to-teal-500 rounded-sm flex items-center justify-center">
+            <div className="text-white text-lg font-bold">20hr.co</div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute bottom-0 z-40 inset-x-0 h-60 bg-gradient-to-t from-white dark:from-black via-white dark:via-black to-transparent w-full pointer-events-none" />
+      <div className="absolute top-0 z-40 inset-x-0 h-60 bg-gradient-to-b from-white dark:from-black via-transparent to-transparent w-full pointer-events-none" />
+    </div>
+  );
+};
+
+export const SkeletonAI = () => {
   return (
     <div className="relative flex py-8 px-2 gap-10 h-full">
       <div className="w-full p-5 mx-auto bg-white dark:bg-neutral-900 shadow-2xl group h-full">
         <div className="flex flex-1 w-full h-full flex-col space-y-2">
           <div className="h-full w-full bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500 rounded-sm flex items-center justify-center">
-            <div className="text-white text-2xl font-bold">AI</div>
+            <div className="text-white text-2xl font-bold">🏃‍♂️ AI</div>
           </div>
         </div>
       </div>
+      <div className="absolute bottom-0 z-40 inset-x-0 h-60 bg-gradient-to-t from-white dark:from-black via-white dark:via-black to-transparent w-full pointer-events-none" />
+      <div className="absolute top-0 z-40 inset-x-0 h-60 bg-gradient-to-b from-white dark:from-black via-transparent to-transparent w-full pointer-events-none" />
+    </div>
+  );
+};
 
+export const SkeletonVoiceAI = () => {
+  return (
+    <div className="relative flex py-8 px-2 gap-10 h-full">
+      <div className="w-full p-5 mx-auto bg-white dark:bg-neutral-900 shadow-2xl group h-full">
+        <div className="flex flex-1 w-full h-full flex-col space-y-2">
+          <div className="h-full w-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 rounded-sm flex items-center justify-center">
+            <div className="text-white text-xl font-bold">🎤 Voice AI</div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute bottom-0 z-40 inset-x-0 h-60 bg-gradient-to-t from-white dark:from-black via-white dark:via-black to-transparent w-full pointer-events-none" />
+      <div className="absolute top-0 z-40 inset-x-0 h-60 bg-gradient-to-b from-white dark:from-black via-transparent to-transparent w-full pointer-events-none" />
+    </div>
+  );
+};
+
+export const SkeletonMarketing = () => {
+  return (
+    <div className="relative flex py-8 px-2 gap-10 h-full">
+      <div className="w-full p-5 mx-auto bg-white dark:bg-neutral-900 shadow-2xl group h-full">
+        <div className="flex flex-1 w-full h-full flex-col space-y-2">
+          <div className="h-full w-full bg-gradient-to-br from-orange-500 via-red-500 to-pink-500 rounded-sm flex items-center justify-center">
+            <div className="text-white text-lg font-bold">📊 Marketing</div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute bottom-0 z-40 inset-x-0 h-60 bg-gradient-to-t from-white dark:from-black via-white dark:via-black to-transparent w-full pointer-events-none" />
+      <div className="absolute top-0 z-40 inset-x-0 h-60 bg-gradient-to-b from-white dark:from-black via-transparent to-transparent w-full pointer-events-none" />
+    </div>
+  );
+};
+
+export const SkeletonYC = () => {
+  return (
+    <div className="relative flex py-8 px-2 gap-10 h-full">
+      <div className="w-full p-5 mx-auto bg-white dark:bg-neutral-900 shadow-2xl group h-full">
+        <div className="flex flex-1 w-full h-full flex-col space-y-2">
+          <div className="h-full w-full bg-gradient-to-br from-yellow-500 via-orange-500 to-red-500 rounded-sm flex items-center justify-center">
+            <div className="text-white text-xl font-bold">YC</div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute bottom-0 z-40 inset-x-0 h-60 bg-gradient-to-t from-white dark:from-black via-white dark:via-black to-transparent w-full pointer-events-none" />
+      <div className="absolute top-0 z-40 inset-x-0 h-60 bg-gradient-to-b from-white dark:from-black via-transparent to-transparent w-full pointer-events-none" />
+    </div>
+  );
+};
+
+export const SkeletonCompetitions = () => {
+  return (
+    <div className="relative flex py-8 px-2 gap-10 h-full">
+      <div className="w-full p-5 mx-auto bg-white dark:bg-neutral-900 shadow-2xl group h-full">
+        <div className="flex flex-1 w-full h-full flex-col space-y-2">
+          <div className="h-full w-full bg-gradient-to-br from-amber-500 via-yellow-500 to-orange-500 rounded-sm flex items-center justify-center">
+            <div className="text-white text-lg font-bold">🏆 Competitions</div>
+          </div>
+        </div>
+      </div>
       <div className="absolute bottom-0 z-40 inset-x-0 h-60 bg-gradient-to-t from-white dark:from-black via-white dark:via-black to-transparent w-full pointer-events-none" />
       <div className="absolute top-0 z-40 inset-x-0 h-60 bg-gradient-to-b from-white dark:from-black via-transparent to-transparent w-full pointer-events-none" />
     </div>
