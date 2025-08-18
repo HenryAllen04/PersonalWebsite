@@ -82,7 +82,7 @@ export default function FeaturesSectionDemo() {
 
         <p className="text-sm lg:text-base max-w-2xl my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
           From AI engineering to full-stack development, I build solutions that bridge technology and human needs. 
-          Here's what I focus on in my work.
+          Here&apos;s what I focus on in my work.
         </p>
       </div>
 

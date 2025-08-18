@@ -3,8 +3,7 @@
  * Features: Word-by-word reveal with blur effect, customizable timing
  */
 "use client";
-import { useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 export const TextGenerateEffect = ({
@@ -20,7 +19,7 @@ export const TextGenerateEffect = ({
 }) => {
   const wordsArray = words.split(" ");
 
-  const container = {
+  const container: Variants = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
       opacity: 1,
@@ -28,7 +27,7 @@ export const TextGenerateEffect = ({
     }),
   };
 
-  const child = {
+  const child: Variants = {
     visible: {
       opacity: 1,
       filter: filter ? "blur(0px)" : "none",
@@ -69,7 +68,7 @@ export const TextGenerateEffect = ({
   return (
     <div className={cn("font-bold", className)}>
       <div className="mt-4">
-        <div className=" dark:text-white text-black text-2xl leading-snug tracking-wide">
+        <div className="dark:text-white text-black text-2xl leading-snug tracking-wide">
           {renderWords()}
         </div>
       </div>

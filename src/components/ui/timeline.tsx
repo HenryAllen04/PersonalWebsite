@@ -110,7 +110,7 @@ export default function Timeline() {
       content: (
         <div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Achieved a major milestone by winning a prestigious competition in Paris and getting accepted into Y Combinator's program. This opened doors to Silicon Valley's startup ecosystem and invaluable mentorship.
+            Achieved a major milestone by winning a prestigious competition in Paris and getting accepted into Y Combinator&apos;s program. This opened doors to Silicon Valley&apos;s startup ecosystem and invaluable mentorship.
           </p>
           <div className="mb-8">
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
@@ -135,7 +135,7 @@ export default function Timeline() {
       content: (
         <div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Secured victory in Milan's entrepreneurship challenge and joined Entrepreneur First, one of Europe's leading talent investor programs. This experience connected me with exceptional co-founders and deep tech opportunities.
+            Secured victory in Milan&apos;s entrepreneurship challenge and joined Entrepreneur First, one of Europe&apos;s leading talent investor programs. This experience connected me with exceptional co-founders and deep tech opportunities.
           </p>
           <div className="mb-8">
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
@@ -185,7 +185,7 @@ export default function Timeline() {
       content: (
         <div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Made the big move to London and started a new role that would define my career trajectory. This transition marked my entry into London's vibrant tech scene and opened up incredible opportunities for growth.
+            Made the big move to London and started a new role that would define my career trajectory. This transition marked my entry into London&apos;s vibrant tech scene and opened up incredible opportunities for growth.
           </p>
           <div className="mb-8">
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">

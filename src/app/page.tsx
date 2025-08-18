@@ -74,9 +74,9 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="min-h-screen bg-white dark:bg-gray-900 p-8 flex items-center">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8 dark:text-white">Let's Connect</h2>
+          <h2 className="text-4xl font-bold mb-8 dark:text-white">Let&apos;s Connect</h2>
           <p className="text-lg dark:text-gray-300 mb-8 leading-relaxed">
-            I'm always excited to discuss new opportunities, collaborate on innovative projects, or just have a great conversation about technology and entrepreneurship.
+            I&apos;m always excited to discuss new opportunities, collaborate on innovative projects, or just have a great conversation about technology and entrepreneurship.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a 
