@@ -69,22 +69,33 @@ export default function Timeline() {
   const data: TimelineEntry[] = [
     {
       title: "Becoming an Exited Founder!",
-      subtitle: "August 2024",
+      subtitle: "August 2025",
       links: {
         website: "https://the20hr.co/",
         linkedin: "https://www.linkedin.com/posts/henry-allen-52868926b_20-hours-20k-exit-20-years-old-here-activity-7363170946574106624-BCKH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEIhP7ABNUSHYD_rPoX7mfX6gz0pW4iU5N8",
-        youtube: "https://youtu.be/NFlOEW9kEfk",
+        youtube: "https://www.youtube.com/shorts/u-dPkvj3Tc0?feature=share",
       },
       content: (
         <div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Built, launched & sold The20hr.co in just 20 hours during a hackathon in Sweden! This incredible journey taught me the power of rapid execution and validated my entrepreneurial instincts.
+            Built, launched & sold The20hr.co in just 20 hours after being flown to Sweden!
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            My team and I set out to do something totally unreasonable. And we did, becoming the fastest exited founders in Europe!
+          </p>
+          <div className="grid grid-cols-3 gap-4">
             <Image
               key="group-photo-sweden"
               src="/timeline/groupphotosweden.jpeg"
               alt="Group photo from Sweden hackathon"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <Image
+              key="swedish-paper"
+              src="/timeline/swedishpaper.png"
+              alt="Swedish newspaper article about the hackathon"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
@@ -103,14 +114,18 @@ export default function Timeline() {
     },
     {
       title: "Winning In Paris! & YC",
-      subtitle: "June 2024",
+      subtitle: "July 2025",
       links: {
-        linkedin: "https://www.linkedin.com/in/henry-allen-52868926b/",
+        website: "https://unmask.click",
+        linkedin: "https://www.linkedin.com/posts/henry-allen-52868926b_900-teams-this-weekend-in-paris-and-we-came-activity-7349363482074443776--9yW?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEIhP7ABNUSHYD_rPoX7mfX6gz0pW4iU5N8",
       },
       content: (
         <div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Achieved a major milestone by winning a prestigious competition in Paris and getting accepted into Y Combinator&apos;s program. This opened doors to Silicon Valley&apos;s startup ecosystem and invaluable mentorship.
+            900+ teams competed in a hackathon weekend in Paris and we came 1st by building Unmask!
+          </p>
+          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            Alongside this, I spent the week attending invited events such as Y Combinator Paris 2025.
           </p>
           <div className="grid grid-cols-3 gap-4 mb-8">
             <Image
@@ -130,23 +145,38 @@ export default function Timeline() {
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <Image
-              key="paris-3"
-              src="/timeline/paris3.jpeg"
-              alt="Paris competition experience 3"
+              key="paris-4"
+              src="/timeline/Paris4.png"
+              alt="Paris hackathon Unmask screenshot"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
           </div>
+
+        </div>
+      ),
+    },
+    {
+      title: "AI for the London Marathon",
+      subtitle: "April 2025",
+      links: {
+        github: "https://github.com/henryallen",
+      },
+      content: (
+        <div>
+          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            Developed an AI-powered application specifically for the London Marathon, combining my passion for technology with fitness. This project showcased real-world AI applications in sports and event management.
+          </p>
           <div className="mb-8">
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              🏆 Won Paris Tech Competition
+              🤖 AI-Powered Marathon App
             </div>
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              🚀 Y Combinator Acceptance
+              🏃‍♂️ Sports Technology Integration
             </div>
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              🌟 Silicon Valley Network Access
+              📱 Real-time Event Management
             </div>
           </div>
         </div>
@@ -154,7 +184,7 @@ export default function Timeline() {
     },
     {
       title: "Winning in Milan & Entrepreneur First",
-      subtitle: "March 2024",
+      subtitle: "March 2025",
       links: {
         linkedin: "https://www.linkedin.com/in/henry-allen-52868926b/",
       },
@@ -190,31 +220,6 @@ export default function Timeline() {
             </div>
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
               💡 Deep Tech Focus
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
-      title: "AI for the London Marathon",
-      subtitle: "April 2023",
-      links: {
-        github: "https://github.com/henryallen",
-      },
-      content: (
-        <div>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Developed an AI-powered application specifically for the London Marathon, combining my passion for technology with fitness. This project showcased real-world AI applications in sports and event management.
-          </p>
-          <div className="mb-8">
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              🤖 AI-Powered Marathon App
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              🏃‍♂️ Sports Technology Integration
-            </div>
-            <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              📱 Real-time Event Management
             </div>
           </div>
         </div>
